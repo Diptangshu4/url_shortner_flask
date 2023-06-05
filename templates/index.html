@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>URL Shortener - Login</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            text-align: center;
+        }
+
+        .form-container {
+            margin-top: 20px;
+        }
+
+        input[type="text"] {
+            width: 300px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            transition: border-color 0.3s ease;
+        }
+
+        input[type="text"]:focus {
+            border-color: #66afe9;
+            outline: none;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #66afe9;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #007bff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>URL Shortener - Login</h1>
+        <div class="form-container">
+            <form action="/shorten" method="post">
+                <input type="text" name="long_url" placeholder="Enter URL">
+                <button type="submit">Shorten</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
